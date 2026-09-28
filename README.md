@@ -16,7 +16,13 @@ up food that is about to go off.
 > [lindellrhett@gmail.com](mailto:lindellrhett@gmail.com).
 > This repository hosts the app's public [support and legal pages](#this-repository).
 
-<!-- Screenshots go here: add PNGs to media/ and list them in a table. -->
+<table>
+  <tr>
+    <td align="center"><img src="media/cook.png" width="250" alt="Cook tab listing recipes that are ready to cook, with time, calories and protein"><br><sub><b>Cook:</b> what you can make right now</sub></td>
+    <td align="center"><img src="media/pantry.png" width="250" alt="Pantry tab with produce items and buttons to add an item or scan a receipt"><br><sub><b>Pantry:</b> shared by the household</sub></td>
+    <td align="center"><img src="media/shopping.png" width="250" alt="Shopping list with ingredients and household items to buy"><br><sub><b>Shopping:</b> live across every phone</sub></td>
+  </tr>
+</table>
 
 ---
 
