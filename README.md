@@ -183,8 +183,27 @@ I built Shelfsmith on my own:
 - **Launch:** set up the privacy and consent design, subscriptions, and the
   build and release pipeline to TestFlight.
 
-Claude Code was one of the tools I used during development. I owned the
-architecture and data design, and led debugging and testing.
+### How I used AI tools
+
+I used Claude Code as a development tool, and it wrote a large share of the
+implementation so I could spend my time on design, review, and the decisions
+that matter. The engineering stayed with me:
+
+- **I set the structure first.** I designed the Postgres schema, the household
+  security model, and the matching engine's rules, then had Claude Code build
+  against that design one piece at a time.
+- **I reviewed every change.** Nothing went in until I had read it and tested
+  it, and when something was wrong I diagnosed the cause and directed the fix.
+- **Tests are the guardrail.** 106 database checks run the real migrations and
+  act as different signed-in users to prove the access rules hold, and a
+  validator checks the recipe library before it is loaded. Generated code has to
+  pass the same checks as anything I write by hand.
+- **I made the tradeoff calls.** Choosing a smaller model for receipt scanning,
+  dropping a prompt cache that was never reused, and making the user review step
+  mandatory were decisions I made from measured data.
+
+AI tools let me move faster; owning the design and verifying the output is what
+makes the result reliable. I'm happy to walk through any part of the code.
 
 ## This repository
 
